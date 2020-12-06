@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <style>
+        .clr:hover{
+            background-color: tomato;
+        }
         input[type="button"]{
             display: block;
             float: left;
@@ -16,9 +19,13 @@
             padding: 15px 0px;
             border: 1px solid white;
         }
+        input[type="button"]:hover{
+            background-color: teal;
+        }
         input{
             font-size: 20px !important;
         }
+        
     </style>
     <title>Calculator Bootstrap</title>
   </head>
@@ -44,14 +51,11 @@
                     <input type="button" value="9" onclick="click9()" class="btn btn-dark">
                     <input type="button" value="*" onclick="clickMult()" class="btn btn-dark">
                     <input type="button" value="0" onclick="click0()" class="btn btn-dark">
-                    <input type="button" value="clr" onclick="clickClr()" class="btn btn-dark">
+                    <input type="button" value="clr" onclick="clickClr()" class="btn btn-dark clr">
                     <input type="button" value="=" onclick="clickEqu()" class="btn btn-dark">
                     <input type="button" value="/" onclick="clickDiv()" class="btn btn-dark"> 
-                    <input type="button" value="." onclick="clickDiv()" class="btn btn-dark"> 
-
                 </form>
             </div>
-            <div class="col-sm-2"></div>
           </div>
       </div>
 
